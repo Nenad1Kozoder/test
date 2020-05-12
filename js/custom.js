@@ -11,7 +11,6 @@ $(document).ready(function () {
 
   $("#slider").on("init", function (e, slick) {
    $(".single-slide:first-child").addClass('animated');
-    doAnimations($firstAnimatingElements);
   });
   $("#slider").on("beforeChange", function (
     e,
