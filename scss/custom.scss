@@ -1,6 +1,42 @@
 @import "base";
+
+body {
+  margin: 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba($black-color, 0.3);
+  padding: 20px 0;
+  z-index: 999;
 nav {
   display: block;
+  ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    li {
+      a {
+        padding: 10px 20px;
+        color: $white-color;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 24px;
+        text-decoration: none;
+      }
+      &:hover {
+        background: rgba($black-color, 0.2);
+      }
+    }
+  }
+}
 }
 
 #slider {
@@ -19,20 +55,33 @@ nav {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        margin: 0;
       }
     }
     .txt-holder {
-      background: $white-color;
+      background: rgba($black-color, 0.5);
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-100vw, 0);
-      @include transition(all 0.1s);
+     
+      padding: 50px 100px ;
+      h1 {
+        font-size: 72px;
+        color: $white-color;
+        margin: 0;
+      }
+      h3 {
+        margin: 0;
+        font-size: 36px;
+        text-transform: uppercase;
+        color: $white-color;
+      }
     }
     &.animated {
       .txt-holder {
         transform: translate(-50%, -50%);
-        @include transition(all 0.9s);
+        @include transition(all 2s);
       }
     }
   }
