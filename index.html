@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My test</title>
     <link type="text/css" rel="stylesheet" href="./css/custom.css" />
+    <link type="text/css" rel="stylesheet" href="./css/slick.css" />
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/custom.js"></script>
     <script
       type="text/javascript"
       charset="UTF-8"
@@ -14,15 +17,44 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a href="index.html">Home</a>
-
-        <a href="index.html">About</a>
-
-        <a href="index.html">Contact</a>
-      </nav>
+      <div class="container">
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main></main>
+    <main>
+      <section id="slider">
+        <article class="single-slide">
+          <div class="img-holder">
+            <img src="./images/autumn-219972.jpg" alt="" />
+          </div>
+          <div class="txt-holder">
+            <h1>Just perfect</h1>
+            <p>Look</p>
+          </div>
+        </article>
+        <article class="single-slide">
+            <div class="img-holder">
+              <img src="./images/sunset-1373171_1920.jpg" alt="" />
+            </div>
+            <div class="txt-holder">
+              <h1>Just perfect</h1>
+              <p>Look</p>
+            </div>
+          </article>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>

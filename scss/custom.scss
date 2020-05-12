@@ -1,3 +1,39 @@
+@import "base";
 nav {
   display: block;
+}
+
+#slider {
+
+  .single-slide {
+    position: relative;
+
+    .img-holder {
+      position: relative;
+      width: 100vw;
+      height: 56.25vw;
+      overflow: hidden;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .txt-holder {
+      background: $white-color;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-100vw, 0);
+      @include transition(all 0.1s);
+    }
+    &.animated {
+      .txt-holder {
+        transform: translate(-50%, -50%);
+        @include transition(all 0.9s);
+      }
+    }
+  }
 }
